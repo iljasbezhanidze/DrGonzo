@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'GothamProLight', sans-serif;
+    src: url('./../assets/fonts/GothamProLight.ttf');
+}
+
+body {
+    font-family: 'GothamProLight', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.b-page {
+}
+.b-page__header {
+}
+.b-page__container {
+}
+.b-main {
+}
+.b-page__content {
+}
+.b-main__section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.b-main__container {
+    flex-grow: 1;
+    max-width: 1174px;
+}
+.b-page-footer {
+}
+.b-page-footer__container {
+}
