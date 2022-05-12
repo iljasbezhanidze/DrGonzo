@@ -3,17 +3,15 @@
     --accent-color: #EB5757;
 }
 
-$maxWidth: 1920;
-
-
 //breakpoints
 //usage: @include md() {...}
+$maxWidth: 1920;
 $breakpoint-xl: 1440px;
 $breakpoint-lg: 1170px;
 $breakpoint-md: 960px;
 $breakpoint-sm: 780px;
 $breakpoint-xs: 560px;
-$breakpoint-mobile: 420px;
+$breakpoint-mobile: 460px;
 
 @mixin xl() {
     @media (max-width: $breakpoint-xl) {
@@ -38,6 +36,7 @@ $breakpoint-mobile: 420px;
         @content;
     }
 }
+
 
 @mixin xs() {
     @media (max-width: $breakpoint-xs) {

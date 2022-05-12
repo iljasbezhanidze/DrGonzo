@@ -1,33 +1,40 @@
-<header class="b-header">
-   <div class="b-header__wrapper">
+<header class="b-header b-header_pc">
+    <div class="b-header__wrapper">
         <div class="b-header__container">
             <img class="b-logo" src="./../img/logo.png" alt="logo">
             <div class="b-header__top">
                 <div class="b-sing-up b-header__sing-up">
+
                     <!-- buttons visitor -->
-                    <!-- <div class="b-sing-up__btns b-sing-up__btns_visitor">
+
+                    <div class="b-sing-up__btns b-sing-up__btns_visitor">
                         <a class="b-btn b-singup__item" href="#">Вход</a>
                         <a class="b-btn b-singup__item" href="#">Регистрация</a>
-                    </div> -->
+                    </div>
+
+
                     <!-- buttons authorized -->
-                    <div class="b-sing-up__btns b-sing-up__btns_authorized" hidden="true">
+
+                    <!-- <div class="b-sing-up__btns b-sing-up__btns_authorized">
                         <div class="b-singup__item b-singup__item_userinfo">
                             <span class="b-singup__text b-singup__text_title">Личный кабинет:</span>
                             <span class="b-singup__text b-singup__text_username">User123:</span>
                         </div>
                         <button class="b-btn b-singup__item">Выйти</button>
-                    </div>
+                    </div> -->
+
                     <!-- message -->
                     <div class="b-sing-up__alert">
                         <div class="b-alert">
-                            <p>Добро пожаловать в магазин Dr.Gonzo, желаем вам приятных покупок. Для продолжения выберите город</p>
+                            <p>Добро пожаловать в магазин Dr.Gonzo, желаем вам приятных покупок. Для продолжения
+                                выберите город</p>
                             <p>и район. С уважением, администрация магазина.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-   </div>
+    </div>
 
     <div class="b-header__container">
         <div class="b-header__bottom">
@@ -47,6 +54,55 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+    </div>
+</header>
+
+<header class="b-header b-header_mob">
+    <div class="b-header__wrapper">
+        <div class="b-header__container">
+            <div class="b-header__navbar">
+                <nav class="b-menu b-header__menu">
+                    <ul class="b-menu__list">
+                        <li class="b-menu__item">
+                            <a class="b-menu__link" href="#">Главная</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a class="b-menu__link" href="#">Проверить заказ</a>
+                        </li>
+                        <li class="b-menu__item">
+                            <a class="b-menu__link" href="#">Вакансии</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="b-burger">
+                    <span class="b-burger__line"></span>
+                    <span class="b-burger__line"></span>
+                    <span class="b-burger__line"></span>
+                </div>
+
+                <div class="b-drop-menu b-drop-menu_visitor b-header__dropdown">
+                    <ul class="b-drop-menu__list">
+                        <li class="b-drop-menu__item">
+                            <a class="b-drop-menu__link" href="#">Вход</a>
+                        </li>
+                        <li class="b-drop-menu__item">
+                            <a class="b-drop-menu__link" href="#">Регистрация</a>
+                        </li>
+                        <li class="b-drop-menu__item">
+                            <a class="b-drop-menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img class="b-logo" src="./../img/logo.png" alt="logo">
+    </div>
+    <!-- message -->
+    <div class="b-sing-up__alert">
+        <div class="b-alert">
+            <p>Добро пожаловать в магазин Dr.Gonzo, желаем вам приятных покупок. Для продолжения выберите город</p>
+            <p>и район. С уважением, администрация магазина.</p>
         </div>
     </div>
 </header>
