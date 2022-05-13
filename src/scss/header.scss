@@ -51,6 +51,11 @@
 
 .b-header__wrapper {
     background: #f0c673;
+    position: relative;
+
+    @media(min-width:960px){
+        box-shadow: 0px 88px 1px 1px rgba(252,234,239,0.91);
+    }
 }
 
 .b-header__top {
@@ -306,6 +311,7 @@
         max-width: 100%;
         display: flex;
         justify-content: center;
+        background-color: rgb(253, 231, 237);
     }
 
     & .b-alert {
@@ -334,7 +340,7 @@
         flex-direction: column;
         transform-origin: top right;
         transform: scale(0);
-        transition: all .3s linear;
+        transition: all .3s;
         display: none;
 
         @include md() {
@@ -380,5 +386,14 @@
         line-height: 1;
         padding-left: 38px;
         padding-right: 38px;
+    }
+
+    .b-drop-menu__out {
+        margin-top: 6px;
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 35px;
+        width: 70%;
     }
 }
