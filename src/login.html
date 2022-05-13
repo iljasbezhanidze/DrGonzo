@@ -1,7 +1,8 @@
 @@include('html/_head.html', {
-	"title" : "DR.Gonzo Market"
+"title" : "DR.Gonzo Market"
 })
 @@include('html/_components.html')
+
 <body>
 	<main class="b-page">
 		<div class="b-page__header">
@@ -13,8 +14,25 @@
 			<section class="b-main__section b-main__section_title">
 				<div class=" b-main__container b-main__container_overflow">
 					@@include('html/title.html', {
-						text: 'Личный кабинет'
+					text: 'Личный кабинет'
 					})
+				</div>
+			</section>
+			<section class="b-main__section">
+				<div class=" b-main__container">
+					<div class="b-login">
+						<div class="b-login__wrapper">
+							<label class="b-login__title" >Пользователь *</label>
+								
+								<input type="text" class="b-login__input" placeholder="Пользователь" required>
+							
+							<label class="b-login__title" >Пароль *</label>
+								
+								<input type="text" class="b-login__input" placeholder="Пароль" required>
+							
+							<a href="#" class="b-login__btn b-btn">Вход</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>

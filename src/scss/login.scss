@@ -1,0 +1,57 @@
+.b-login {
+    background-color: #fceaef;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.b-login__wrapper {
+    max-width: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 2;
+    @include  xs() {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include  mob() {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.b-login__title {
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 100%;
+    display: block;
+}
+
+.b-login__input {
+    font-size: 16px;
+    border-color: #a78f92;
+    outline: transparent;
+    border-style: solid;
+    padding: 10px 7px;
+    flex-grow: 2;
+    width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.b-login__btn {
+    width: max-content;
+    padding-left: 43px;
+    padding-right: 43px;
+    margin-top: 55px;
+}
+
+.b-btn {}
