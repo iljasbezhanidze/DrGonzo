@@ -1,0 +1,68 @@
+.b-card-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.b-card {
+    border-style: solid;
+    border-width: 6px;
+    border-color: rgb(121, 55, 157);
+    border-radius: 6px;
+    background-color: rgb(71, 29, 94);
+    flex: 1;
+    max-width: 244px;
+    padding: 30px 18px 16px;
+    color: #fff;
+}
+
+.b-card__head {
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 30px;
+}
+
+.b-card__title {
+    font-size: 16px;
+}
+
+.b-card__properties {
+    font-size: 16px;
+}
+
+.b-card__description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #a38eaf;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.b-card__price {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.b-card__nav {
+    display: flex
+}
+
+.b-card__bascet {
+    @extend.b-btn;
+    background-image: url('./../img/basket.png');
+    background-repeat: no-repeat;
+    background-size: 29px 26px;
+    background-position: 42% 46%;
+    width: 42px;
+    height: 42px;
+    margin-right: 9px;
+}
+
+.b-card__pay {
+    @extend.b-btn;
+    color: #fff;
+    font-size: 16px;
+    flex-grow: 1;
+}
