@@ -14,8 +14,8 @@
     align-items: center;
     flex-grow: 2;
     @include  xs() {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     @include  mob() {
         padding-left: 10px;

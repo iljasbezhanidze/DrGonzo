@@ -63,7 +63,10 @@ body {
 .b-page__header {
 }
 
-.b-page__container {}
+.b-page__container {
+
+ 
+}
 
 .b-main {}
 
@@ -75,20 +78,38 @@ body {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 81px;
-    padding-bottom: 84px;
+    // padding-top: 81px;
+    // padding-bottom: 84px;
 
     &_title {
         padding-left: 0;
         padding-right: 0;
         padding-top: 81px;
         padding-bottom: 84px;
+
+        @include  sm() {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        @include  xs() {
+            padding-top: 34px;
+            padding-bottom: 34px;
+        }
     }
 }
 
 .b-main__container {
     flex-grow: 1;
     max-width: 1174px;
+
+    &_center {
+        display: flex;
+        justify-content: center;
+
+        & > {
+            flex-grow: 1;
+        }
+    }
 }
 
 .b-page-footer {}
