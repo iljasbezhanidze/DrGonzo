@@ -1,0 +1,60 @@
+.b-increase-balance {
+    text-align: center;
+
+    & * {
+        margin-bottom: 22px;
+
+        @include sm() {
+            margin-bottom: 18px;
+        }
+    }
+
+    & input {
+        width: 100%;
+    }
+}
+
+.b-increase-balance__title {
+    margin-bottom: 60px;
+
+    @include sm() {
+        margin-bottom: 40px;
+    }
+}
+
+.b-increase-balance__coin-addresss {
+    max-width: 408px;
+    height: 36px;
+    color: #9f9f9f;
+    text-align: center;
+    border-radius: 3px;
+    border-style: solid;
+
+    &:focus {
+        outline: transparent;
+        // border-color: transparent;
+    }
+}
+
+button.b-increase-balance__copy-btn {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(113, 113, 113);
+    background-color: rgb(226, 226, 226);
+    border-radius: 3px;
+    line-height: .8;
+    font-weight: 500;
+    width: 130px;
+    height: 23px;
+    color: #000;
+    transition: all .3s;
+
+    &:hover {
+        background-color: rgb(155, 145, 145);
+        color: #fff;
+    }
+}
+
+.b-increase-balance__copy {
+    column-gap: 10px;
+}

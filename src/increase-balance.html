@@ -1,7 +1,8 @@
 @@include('html/_head.html', {
-	"title" : "DR.Gonzo Market"
+"title" : "DR.Gonzo Market"
 })
 @@include('html/_components.html')
+
 <body>
 	<main class="b-page">
 		<div class="b-page__header">
@@ -13,13 +14,31 @@
 			<section class="b-main__section b-main__section_title">
 				<div class=" b-main__container b-main__container_overflow">
 					@@include('html/title.html', {
-						text: 'Личный кабинет'
+					text: 'Пополнение баланса'
 					})
 				</div>
 			</section>
 			<section class="b-main__section">
-				<div class=" b-main__container">
-			
+				<div class="b-main__container b-main__container_background b-main__container_centered">
+					<div class=" b-main__container b-main__container_sm">
+						<div class="b-increase-balance">
+							<h2 class="b-increase-balance__title">Оплата Bitcoin</h2>
+							<p>Ваш номер заказа 2700390</p>
+							<p class="b-attention">Обязательно сохраните ЕГО!</p>
+							<p>Вы выбрали город: <span>Город 1</span></p>
+							<p>Район: <span>Район 1</span></p>
+							<p>Товар <span>Watermellon Skittlez 2гр</span></p>
+							<p>Сумма: <span>234 Bitcoin</span></p>
+							<p>Способ оплаты: <span>Bitcoin</span></p>
+							<p>Для оплаты переведите: <span class="b-attention">0.00201</span></p>
+							<p>на кошелёк Bitcoin:</p>
+							<div class="b-increase-balance__copy">
+								<input type="text" readonly class="b-increase-balance__coin-addresss"
+									value="3MQTRzttkMtsMEy9dRq4Sf1xiSsWKgQkyH" placeholder="3MQTRzttkMtsMEy9dRq4Sf1xiSsWKgQkyH">
+								<button class="b-increase-balance__copy-btn">Копировать</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>

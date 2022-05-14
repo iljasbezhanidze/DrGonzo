@@ -136,9 +136,32 @@ body {
 }
 
 /////////
-p {
-    font-size: 16px;
-    color: rgb(92, 62, 64);
-    line-height: 1.125;
-    text-align: center;
+p, span, li, a {
+    font-size: 18px;
+    line-height: 15px;
+    color: #67494c;
+}
+
+.b-attention {
+    color: #e43031;
+}
+
+.b-main__container_sm {
+    max-width: 552px;
+}
+
+.b-main__container_background {
+    border-radius: 6px;
+    background-color: rgb(252, 234, 239);
+    padding-top: 37px;
+    padding-bottom: 34px;
+}
+
+.b-main__container_centered {
+    display: flex;
+    justify-content: center;
+
+    & > * {
+        flex-grow: 1;
+    }
 }
