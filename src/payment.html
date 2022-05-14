@@ -13,13 +13,39 @@
 			<section class="b-main__section b-main__section_title">
 				<div class=" b-main__container b-main__container_overflow">
 					@@include('html/title.html', {
-						text: 'Личный кабинет'
+						text: 'Оплата'
 					})
 				</div>
 			</section>
 			<section class="b-main__section">
-				<div class=" b-main__container">
-			
+				<div class=" b-main__container b-main__container_background">
+					<div class="b-payment">
+						<div class="b-payment__head">
+							<a href="#" class="b-payment__btn-prev">Вернуться назад</a>	
+							<div class="b-payment__title b-payment__title_pc">
+								Выберите удобный способ оплаты
+							</div>
+						</div>
+					</div>
+					<ul class="b-coins b-payment__inner">
+						<li class="b-coins__item">
+							<a href="" class="b-coins__link">
+								<img src="./img/btc.png" alt="" class="b-coins__frame">
+								<div class="b-coins__text">(Скидка 10%)</div>
+								<div class="b-coins__title-coin">Bitcoin</div>
+							</a>
+						</li>
+						<li class="b-coins__item">
+							<a href="" class="b-coins__link">
+								<img src="./img/ltc.png" alt="" class="b-coins__frame">
+								<div class="b-coins__text">(Скидка 10%)</div>
+								<div class="b-coins__title-coin">Litecoin</div>
+							</a>
+						</li>
+					</ul>
+					<div class="b-payment__title b-payment__title_mob">
+						Выберите удобный способ оплаты
+					</div>
 				</div>
 			</section>
 		</div>
