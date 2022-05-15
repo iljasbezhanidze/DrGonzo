@@ -7,6 +7,7 @@
 .b-account__head {
     display: flex;
     justify-content: space-between;
+    row-gap: 5px;
     margin-bottom: 62px;
     column-gap: 20px;
 
@@ -121,4 +122,12 @@
     @include  lg() {
         text-align: center;
     }
+}
+
+.b-account__sales,
+.b-account_wellcome-text,
+.b-account__last-session {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
 }

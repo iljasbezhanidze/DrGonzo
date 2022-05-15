@@ -13,13 +13,24 @@
 			<section class="b-main__section b-main__section_title">
 				<div class=" b-main__container b-main__container_overflow">
 					@@include('html/title.html', {
-						text: 'Личный кабинет'
+						text: 'Пополнение баланса'
 					})
 				</div>
 			</section>
 			<section class="b-main__section">
 				<div class=" b-main__container">
-			
+					<div class="b-balace-captcha">
+						<div class="b-balace-captcha__item">
+							<div class="b-captcha b-balace-captcha__img" style="background-image: url('img/capcha.png');"></div>
+							<button class="b-balace-captcha__next">Обновить</button>
+						</div>
+						<div class="b-balace-captcha__item">
+							<input class="b-capcha-enter" type="text" placeholder="CENX">
+						</div>
+						<div class="b-balace-captcha__item">
+							<a href="№" class="b-balace-captcha__btn b-btn">Продолжить</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
