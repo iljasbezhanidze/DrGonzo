@@ -8,15 +8,17 @@ burger.onclick = function() {
 }
 
 
+
 //copy in buffer
-const copyBtn = document.querySelector('.b-increase-balance__copy-btn'),
-      copyTarget = document.querySelector('.b-increase-balance__coin-addresss')
-
-function copyInBuffer(btn, copy) {
-    btn.onclick = () => navigator.clipboard.writeText(copy)
-}
-copyInBuffer(copyBtn, copyTarget.value)
-
+try {
+    const copyBtn = document.querySelector('.b-increase-balance__copy-btn'),
+          copyTarget = document.querySelector('.b-increase-balance__coin-addresss')
+    
+    function copyInBuffer(btn, copy) {
+        btn.onclick = () => navigator.clipboard.writeText(copy)
+    }
+    copyInBuffer(copyBtn, copyTarget.value)
+} catch {}
 
 
 

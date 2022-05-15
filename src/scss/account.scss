@@ -1,0 +1,124 @@
+.b-account {
+    border-radius: 6px;
+    background-color: rgb(252, 234, 239);
+    padding: 46px 32px 44px;
+}
+
+.b-account__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 62px;
+    column-gap: 20px;
+
+    @include  sm() {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.b-account__info {}
+
+.b-account_wellcome-text {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 25px;
+
+
+}
+
+.b-account__last-session {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.b-account__sales {
+    font-weight: 600;
+    font-size: 16px;
+
+    @include  sm() {
+        margin-bottom: 54px;
+    }
+}
+
+
+.b-account__balance {}
+
+.b-account__info-balance {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.b-account__btn {}
+
+.b-btn {}
+
+.b-transactions {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.b-account__history {
+    
+}
+
+.b-transactions__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.b-transactions__inner {
+    max-width: 696px;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 2;
+    justify-content: space-between;
+}
+
+.b-transactions__container {
+    max-width: 696px;
+}
+
+.b-transactions__head {
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: rgb(71, 29, 94);
+    padding-top: 22px;
+    padding-bottom: 22px;
+    color: #fff;
+}
+
+.b-transactions__container {
+    max-width: 696px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.b-transactions__info {
+    max-width: calc(696px / 4);
+    flex-grow: 1;
+
+    @include  lg() {
+        text-align: center;
+    }
+}
+
+.b-transactions__row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.b-transactions__item {
+    max-width: calc(696px / 4);
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include  lg() {
+        text-align: center;
+    }
+}

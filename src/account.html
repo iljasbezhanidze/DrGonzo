@@ -1,7 +1,8 @@
 @@include('html/_head.html', {
-	"title" : "DR.Gonzo Market"
+"title" : "DR.Gonzo Market"
 })
 @@include('html/_components.html')
+
 <body>
 	<main class="b-page">
 		<div class="b-page__header">
@@ -13,13 +14,68 @@
 			<section class="b-main__section b-main__section_title">
 				<div class=" b-main__container b-main__container_overflow">
 					@@include('html/title.html', {
-						text: 'Личный кабинет'
+					text: 'Личный кабинет'
 					})
 				</div>
 			</section>
 			<section class="b-main__section">
 				<div class=" b-main__container">
-			
+					<div class="b-account">
+						<div class="b-account__head">
+							<div class="b-account__info">
+								<p class="b-account_wellcome-text">
+									Добро пожаловать: <span>1234</span>
+								</p>
+								<p class="b-account__last-session">
+									Крайний вход в систему:
+									<span>13-05-2022 15:59:03</span>
+								</p>
+								<p class="b-account__sales">
+									Скидка отсутствует<span></span>
+								</p>
+							</div>
+							<div class="b-account__balance">
+								<p class="b-account__info-balance">Ваш баланс:
+									<span>0</span>
+								</p>
+								<a href="" class="b-account__btn b-btn">Пополнить</a>
+							</div>
+						</div>
+						<div class="b-transactions b-account__history">
+							<div class="b-transactions__head">
+								<div class="b-transactions__container">
+									<div class="b-transactions__info">Номер</div>
+									<div class="b-transactions__info">Тип платежа</div>
+									<div class="b-transactions__info">Статус</div>
+									<div class="b-transactions__info">Дата</div>
+								</div>
+							</div>
+							<div class="b-transactions__wrapper">
+								<div class="b-transactions__inner">
+									<div class="b-transactions__item">23423</div>
+									<div class="b-transactions__item">Master Card</div>
+									<div class="b-transactions__item">Оплачено</div>
+									<div class="b-transactions__item">12.05.22</div>
+								</div>
+							</div>
+							<div class="b-transactions__wrapper">
+								<div class="b-transactions__inner">
+									<div class="b-transactions__item">23423</div>
+									<div class="b-transactions__item">Visa</div>
+									<div class="b-transactions__item">Оплачено</div>
+									<div class="b-transactions__item">12.05.22</div>
+								</div>
+							</div>
+							<div class="b-transactions__wrapper">
+								<div class="b-transactions__inner">
+									<div class="b-transactions__item">23423</div>
+									<div class="b-transactions__item">Master Card</div>
+									<div class="b-transactions__item">Оплачено</div>
+									<div class="b-transactions__item">12.05.22</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
