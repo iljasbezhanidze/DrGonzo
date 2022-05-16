@@ -70,7 +70,12 @@ body {
 
 .b-main {}
 
-.b-page__content {}
+.b-page__content {
+    background-image: url('img/BG.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
 
 .b-main__section {
     display: flex;
@@ -145,15 +150,19 @@ p, span, li, a, strong {
 
 h1 {
     font-size: 27px;
+    margin-bottom: 50px;
 }
 h2 {
     font-size: 24px;
+    margin-bottom: 40px;
 }
 h3 {
     font-size: 22px;
+    margin-bottom: 30px;
 }
 h4 {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 h5 {
     font-size: 18px;

@@ -20,4 +20,10 @@
     flex-shrink: 0;
     min-width: 250px;
     max-width: 23%;
+
+
+    @media(max-width:625px){
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
