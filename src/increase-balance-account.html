@@ -1,7 +1,8 @@
 @@include('html/_head.html', {
-	"title" : "DR.Gonzo Market"
+"title" : "DR.Gonzo Market"
 })
 @@include('html/_components.html')
+
 <body>
 	<main class="b-page">
 		<div class="b-page__header">
@@ -13,13 +14,33 @@
 			<section class="b-main__section b-main__section_title">
 				<div class=" b-main__container b-main__container_overflow">
 					@@include('html/title.html', {
-						text: 'Личный кабинет'
+					text: 'Пополнение баланса'
 					})
 				</div>
 			</section>
 			<section class="b-main__section">
 				<div class=" b-main__container">
-			
+					<div class="b-increase">
+						<div class="b-increase__head">
+							<a href="#" class="b-increase__btn-prev">Вернуться назад</a>
+							<div class="b-increse__description">Введите сумму на которую хотите пополнить баланс</div>
+						</div>
+						<div class="b-increse__body">
+							<div class="b-increse__capcha">
+								<div class="b-captcha b-increse__img" style="background-image: url('img/capcha.png');">
+								</div>
+								<label class="b-captcha__wrapper">Введите капчу:
+									<input class="b-capcha-enter b-increse__enter" type="text" placeholder="CENX">
+								</label>
+							</div>
+							<div class="b-increase__sum-wrapper">
+								<label class="b-increase__sum">Сумма *
+									<input type="text" class="b-increase__input" placeholder="12345">
+								</label>
+							</div>
+							<a href="#" class="b-increse__btn b-btn">Пополнить</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>

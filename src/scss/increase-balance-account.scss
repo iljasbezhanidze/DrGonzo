@@ -1,0 +1,160 @@
+.b-increase {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: rgb(252, 234, 239);
+    padding-top: 37px;
+    padding-bottom: 34px;
+    padding: 52px;
+
+    @include md() {
+        padding-top: 76px;
+    }
+
+    @include  xs() {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.b-increase__head {
+    @extend .b-payment__head;
+    width: 100%;
+    margin-bottom: 73px;
+
+    @include md() {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+}
+
+.b-increase__btn-prev {
+    @extend .b-payment__btn-prev;
+    top: -20px;
+
+    @include md() {
+        top: -56px;
+        left: 0px;
+    }
+}
+
+.b-increse__description {
+    font-size: 17px;
+    color: #715557;
+    text-align: center;
+
+    @include md() {
+        text-align: center;
+    }
+}
+
+.b-increse__body {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    column-gap: 20px;
+
+    @include md() {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.b-increse__capcha {
+    display: flex;
+    align-items: baseline;
+    align-items: flex-end;
+
+    @include md() {
+        order: 2;
+        margin-bottom: 30px;
+    }
+}
+
+.b-captcha {}
+
+.b-increse__img {
+    margin-right: 8px;
+    height: 152px;
+}
+
+.b-capcha-enter {}
+
+.b-increase__sum-wrapper,
+.b-increase__sum {
+    display: flex;
+    flex-direction: column;
+    color: #5c3e40;
+    font-weight: 500;
+    width: 100%;
+    font-size: 16px;
+
+    @include md() {
+        order: 1;
+    }
+}
+
+.b-increase__sum-wrapper {
+    width: 408px;
+    font-size: 16px;
+
+    @include md() {
+        margin-bottom: 56px;
+    }
+
+    @media(max-width: 459px) {
+        width: 100%;
+    }
+}
+
+.b-increase__input {
+    width: 100%;
+    height: 36px;
+    color: #a78f92;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a78f92;
+    font-size: 17px;
+    line-height: 1;
+    
+    @include md() {
+        margin-top: 8px;
+    }
+
+
+
+    &:focus {
+        outline: transparent;
+        // border-color: transparent;
+    }
+}
+
+.b-increse__enter {
+    width: 133px;
+    height: 36px;
+    border-color: #a78f92;
+    border-width: 1px;
+    border-radius: 0px !important;
+}
+
+.b-captcha__wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #5c3e40;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.b-increse__btn {
+    width: 140px;
+    height: 46px;
+
+    @include md() {
+        order: 3;
+    }
+}
