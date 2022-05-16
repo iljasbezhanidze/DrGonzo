@@ -1,0 +1,70 @@
+.b-validate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: rgb(252, 234, 239);
+    padding-top: 36px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.b-validate__alert {
+    max-width: 777px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.b-validate__main {
+}
+.b-validate__order {
+    @extend .b-increase__sum-wrapper;
+}
+.b-validate__title {
+    @extend .b-increase__sum;
+    font-weight: 600;
+    font-size: 15px;
+}
+.b-validate__input {
+    @extend .b-increase__input;
+    margin-bottom: 22px;
+
+    &::placeholder {
+        color: #9f9f9f;
+        font-weight: 400;
+    }
+}
+.b-validate__capcha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.b-captcha {
+}
+.b-validate__img {
+    margin-bottom: 10px;
+}
+.b-captcha__wrapper {
+}
+.b-capcha-enter {
+    margin-bottom: 25px;
+    width: 133px;
+    height: 36px;
+    border-color: #a78f92;
+    border-width: 1px;
+    border-radius: 0px !important;
+}
+
+.b-validate__nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+.b-validate__btn {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.b-validate__btn_check {
+}
+
+.b-validate__btn_prev {
+}

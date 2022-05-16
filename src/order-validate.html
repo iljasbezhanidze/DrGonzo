@@ -1,0 +1,63 @@
+@@include('html/_head.html', {
+	"title" : "DR.Gonzo Market"
+})
+@@include('html/_components.html')
+<body>
+	<main class="b-page">
+		<div class="b-page__header">
+			<div class="b-page__container">
+				@@include('html/header.html')
+			</div>
+		</div>
+		<div class="b-main b-page__content">
+			<section class="b-main__section b-main__section_title">
+				<div class=" b-main__container b-main__container_overflow">
+					@@include('html/title.html', {
+						text: 'Проверка заказа'
+					})
+				</div>
+			</section>
+			<section class="b-main__section">
+				<div class=" b-main__container">
+
+					<div class="b-validate">
+						<div class="b-validate__alert">
+							<p>Уважаемый клиент, для проверки вашего заказа,укажите номер заказа в поле ниже.</p>
+							<strong>Если вы потеряли номер заказа, к сожалению ничем вам помочь не сможем.</strong>
+						</div>
+
+						<div class="b-validate__main">
+							<div class="b-validate__order">
+								<label class="b-validate__title">Введите номер заказа *
+									<input type="text" class="b-validate__input" placeholder="12345">
+								</label>
+							</div>
+
+							<div class="b-validate__capcha">
+								<div class="b-captcha b-validate__img" style="background-image: url('img/capcha.png');">
+								</div>
+								<label class="b-captcha__wrapper">
+									<input class="b-capcha-enter" type="text" placeholder="CENX">
+								</label>
+							</div>
+
+							<div class="b-validate__nav">
+								<button class="b-validate__btn b-validate__btn_check b-btn">Проверить</button>
+								<button class="b-validate__btn b-validate__btn_prev b-btn">Назад</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="b-page-footer">
+			<div class="b-page-footer__container">
+				@@include('html/footer.html')
+			</div>
+		</div>
+	</main>
+	@@include('html/_scripts.html')
+</body>
+
+</html>
