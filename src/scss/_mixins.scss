@@ -94,3 +94,24 @@ $breakpoint-mobile: 460px;
         }
     }
 }
+
+@mixin grid($min-width, $max-width, $gap: 2em) {
+    // & {
+    //     display: flex;
+    //     flex-wrap: wrap;
+
+    //     & ~ * {
+    //         flex: 1 1 $min-width;
+    //         max-width: $max-width;
+    //     }
+    // }
+
+    // @supports(display: grid) {
+        & {
+            display: grid;
+            grid-gap: $gap;
+            grid-template-columns: repeat(auto-fit, minmax($min-width, $max-width));
+            @content;
+        }
+    // }
+}

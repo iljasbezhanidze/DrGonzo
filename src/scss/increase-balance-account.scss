@@ -51,11 +51,10 @@
 }
 
 .b-increse__body {
-    width: 940px;
+    max-width: 940px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 100%;
     column-gap: 20px;
 
     @include md() {

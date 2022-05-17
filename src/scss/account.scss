@@ -2,6 +2,11 @@
     border-radius: 6px;
     background-color: rgb(252, 234, 239);
     padding: 46px 32px 44px;
+
+    @media(max-width:460px){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .b-account__head {
@@ -14,6 +19,7 @@
     @include  sm() {
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 27px;
     }
 }
 
@@ -30,7 +36,6 @@
 .b-account__last-session {
     font-weight: 600;
     font-size: 16px;
-    margin-bottom: 5px;
 }
 
 .b-account__sales {
@@ -62,7 +67,19 @@
 }
 
 .b-account__history {
-    
+
+    @media(max-width:460px){
+        width: 420px;
+        overflow-x: scroll;
+    }
+}
+
+@media(max-width:420px){
+    .b-account__wrapper {
+        max-width: 100vw;
+        overflow: scroll;
+        margin-right: -4px;
+    }
 }
 
 .b-transactions__wrapper {
@@ -114,13 +131,14 @@
 }
 
 .b-transactions__item {
-    max-width: calc(696px / 4);
+    max-width: calc(100% / 4);
     flex-grow: 1;
     padding-top: 10px;
     padding-bottom: 10px;
 
     @include  lg() {
         text-align: center;
+        min-width: max-content;
     }
 }
 
@@ -129,5 +147,4 @@
 .b-account__last-session {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 5px;
 }
