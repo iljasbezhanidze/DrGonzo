@@ -125,6 +125,7 @@
 }
 
 .b-alert {
+    text-align: center;
     background: #fcfcfd;
     padding: 18px 22px;
     border-radius: 6px;
@@ -344,7 +345,7 @@
             transform: scale(0);
             transition: all .3s;
             display: none;
-            padding: 5px;
+            padding: 0 5px;
             
             & .b-menu__item.b-menu__item_mob {
                 margin-right: 0;

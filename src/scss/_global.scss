@@ -9,7 +9,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     background-color: #fcfcfd;
-    background-image: url('./../img/BG.png');
+    background-image: url('./img/BG.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: #5c3e40;
@@ -32,7 +32,7 @@ body {
         transform: translateY(-50%);
         white-space: nowrap;
 
-        @include  xs() {
+        @include xs() {
             font-size: 20px;
         }
     }
@@ -40,14 +40,16 @@ body {
     &:after {
         padding-left: 24px;
     }
+
     &:before {
         padding-right: 24px;
     }
 
-    @include  xs() {
+    @include xs() {
         font-size: 25px;
     }
 }
+
 .b-main__title-wrapper {
     width: 100%;
     display: flex;
@@ -61,13 +63,9 @@ body {
 
 .b-page {}
 
-.b-page__header {
-}
+.b-page__header {}
 
-.b-page__container {
-
- 
-}
+.b-page__container {}
 
 .b-main {}
 
@@ -76,6 +74,11 @@ body {
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
+}
+
+.b-main__section_title {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .b-main__section {
@@ -87,11 +90,12 @@ body {
     // padding-top: 81px;
     // padding-bottom: 84px;
 
-    @media(max-width:470px){
+    @media(max-width:470px) {
         padding-left: 15px;
         padding-right: 15px;
     }
-    @media(max-width:375px){
+
+    @media(max-width:375px) {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -102,11 +106,12 @@ body {
         padding-top: 81px;
         padding-bottom: 84px;
 
-        @include  sm() {
+        @include sm() {
             padding-top: 50px;
             padding-bottom: 50px;
         }
-        @include  xs() {
+
+        @include xs() {
             padding-top: 34px;
             padding-bottom: 34px;
         }
@@ -121,7 +126,7 @@ body {
         display: flex;
         justify-content: center;
 
-        & > {
+        &> {
             flex-grow: 1;
         }
     }
@@ -131,7 +136,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 
-    @include  xs() {
+    @include xs() {
         padding-top: 25px;
         padding-bottom: 25px;
     }
@@ -146,7 +151,7 @@ body {
     font-size: 16px;
     height: 41px;
     color: #f3edf6;
-    border: 2px solid #4d2066;
+    // border: 2px solid #4d2066;
     border-radius: 6px;
     background-color: #79379d;
     box-shadow: 0px 0px 0px 4px #612b7f;
@@ -162,6 +167,9 @@ body {
             box-shadow: 0px 0px 0px 4px #a678bf;
         }
     }
+    &_light-border {
+        box-shadow: 0px 0px 0px 4px #a678bf;
+    }
 }
 
 /////////
@@ -175,6 +183,7 @@ body {
 .b-main__container_sm {
     max-width: 552px;
 }
+
 .b-main__container_xs {
     max-width: 696px;
 }
@@ -190,7 +199,7 @@ body {
     display: flex;
     justify-content: center;
 
-    & > * {
+    &>* {
         flex-grow: 1;
     }
 }

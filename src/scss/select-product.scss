@@ -4,45 +4,66 @@
     justify-content: space-between;
     gap: 20px;
 
-    @media(max-width:460px){
+    @media(max-width:460px) {
         flex-direction: column;
     }
 }
 
+.b-card__inner {
+    background-color: rgb(71, 29, 94);
+    padding: 30px 18px 16px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
 .b-card {
     border-style: solid;
-    border-width: 6px;
-    border-color: rgb(121, 55, 157);
-    border-radius: 6px;
-    background-color: rgb(71, 29, 94);
+    border-radius: 10px;
+    background-color: rgb(121, 55, 157);
     flex: 1;
+    padding: 6px;
     max-width: 244px;
-    padding: 30px 18px 16px;
     color: #fff;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 
-    @media(max-width:460px){
-        width: 240px;    
+    @media(max-width:460px) {
+        width: 240px;
     }
 }
 
 .b-card__head {
     text-align: center;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid #a38eaf;
     padding-bottom: 30px;
 }
 
+.b-product__turns-location {
+    display: none;
+    text-align: center;
+
+    @include sm() {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 33px;
+        line-height: 18px;
+    }
+}
+
 .b-card__title {
-    font-size: 16px;
+    font-size: 17px;
     min-width: 15ch;
     margin-bottom: 0;
     line-height: .9;
     margin-bottom: 3px;
+    font-weight: 400;
 }
 
 .b-card__properties {
-    font-size: 16px;
+    font-size: 15px;
     min-width: 15ch;
     line-height: 0.9;
     font-weight: 500;
@@ -50,30 +71,31 @@
 
 .b-card__description {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 34px;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
+    margin-bottom: 26px;
+    border-bottom: 1px solid #a38eaf;
+    text-align: left;
 
-    @include  xs() {
-        border-bottom: 1px solid rgb(255, 255, 255);
-    }
 }
 
 .b-card__price {
     font-size: 25px;
     text-align: center;
     color: #fff;
-    padding-top: 26px;
     padding-bottom: 26px;
+    margin-top: auto;
 }
 
 .b-card__nav {
-    display: flex
+    display: flex;
+    // margin-top: auto;
 }
 
 .b-card__bascet {
     @extend.b-btn;
-    background-image: url('./../img/basket.png');
+    background-image: url('./img/basket.png');
     background-repeat: no-repeat;
     background-size: 28px 22px;
     background-position: 41% 49%;
