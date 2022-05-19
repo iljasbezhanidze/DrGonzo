@@ -1,5 +1,4 @@
-.b-payment {
-}
+.b-payment {}
 
 .b-payment__head {
     position: relative;
@@ -42,7 +41,7 @@
     column-gap: 10px;
     row-gap: 50px;
 
-    @include  mob() {
+    @include mob() {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -81,7 +80,9 @@
 
 .b-coins__text {
     margin-top: auto;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    // font-weight: 600;
 }
 
 .b-coins__title-coin {
@@ -96,17 +97,19 @@
 
 .b-payment__title_pc {
     opacity: 1;
-    @include  sm() {
+
+    @include sm() {
         opacity: 0;
     }
 }
 
 .b-payment__title_mob {
     display: none;
-    margin-bottom: 44px;
+    // margin-bottom: 44px;
     text-align: center;
-    margin-top: 50px;
-    @include  sm() {
+    margin-top: 44px;
+
+    @include sm() {
         display: block;
     }
 }

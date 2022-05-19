@@ -90,7 +90,7 @@
     color: #5c3e40;
     font-weight: 500;
     width: 100%;
-    font-size: 16px;
+    font-size: 17px;
 
     @include md() {
         order: 1;
@@ -144,6 +144,7 @@
     border-color: #a78f92;
     border-width: 1px;
     border-radius: 0px !important;
+    font-size: 17px;
 }
 
 .b-captcha__wrapper {
@@ -151,8 +152,10 @@
     flex-direction: column;
     color: #5c3e40;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
 }
+
+
 
 .b-increse__btn {
     width: 140px;

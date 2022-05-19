@@ -21,6 +21,9 @@
     margin-bottom: 55px;
     font-weight: 600;
     font-size: inherit;
+    @include  xs() {
+        display: none;
+    }
 
 
     @include sm() {
@@ -39,9 +42,9 @@
     font-weight: 400;
 
     @include xs() {
-        margin-left: 12px;
-        margin-right: 12px;
-        max-width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 94%;
     }
 
     &:focus {

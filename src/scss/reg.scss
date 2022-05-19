@@ -48,6 +48,10 @@
     &:not(:last-child) {
         margin-bottom: 24px;
     }
+    &::placeholder {
+        font-weight: 600;
+        color: #b3a5a6;
+    }
 }
 
 .b-registration__btn {

@@ -18,11 +18,13 @@
     max-width: 777px;
     margin-bottom: 80px;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.1;
 
     @include  xs() {
         font-size: 14px;
         margin-bottom: 30px;
+        max-width: 237px
     }
 }
 .b-validate__main {

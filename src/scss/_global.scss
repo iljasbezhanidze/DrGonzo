@@ -151,7 +151,6 @@ body {
     font-size: 16px;
     height: 41px;
     color: #f3edf6;
-    // border: 2px solid #4d2066;
     border-radius: 6px;
     background-color: #79379d;
     box-shadow: 0px 0px 0px 4px #612b7f;
@@ -169,6 +168,11 @@ body {
     }
     &_light-border {
         box-shadow: 0px 0px 0px 4px #a678bf;
+        border: 2px solid transparent;
+
+        &:hover {
+            border: 2px solid #4d2066;
+        }
     }
 }
 
